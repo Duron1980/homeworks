@@ -1,16 +1,16 @@
 """check string for polyndromism"""
-def check_input_string(word: str)-> str:
+def function_1(word: str)-> str:
     check_string = ''.join(letter for letter in word if letter.isalnum())
     return check_string
 
 
-def chek_word_polyndromism(word: str):
+def function_2(word: str):
     if word[:] == word[::-1]:
         return print(f'Word {word} is polyndrom ')
     return print(f'Word {word} is not polyndrom ')
 
 
-def main(word: str):
+def function_3(word: str):
     """main controller"""
     check_str = check_input_string(word)
     chek_word_polyndromism(check_str)
